@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 60px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card>img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.partidas {
+    text-align: center;
+    padding: 25px;
+}
+
+.partida {
+    width: 50% fit-content;
+    margin: 20px;
+    align-items: center;
+    padding: 40px;
+    box-shadow: black 0px 1px 3px 1px;
+    background: rgb(221, 221, 221);
+    border-left: 4px solid rgb(38, 47, 55);
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: rgb(190, 188, 188);
+}
+
+/* HEADER */
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    display: fixed;
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    margin:0 0;
+    display: flex;
+    gap: 2rem;
+}
+
+ .navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+ }
+
+ .action_btn {
+    background-color: rgb(8, 8, 8);
+    color: #ffffff;
+    padding: 0.5rem 0.5rem;
+    margin:0 -280px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+ }
+
+ .action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+ }
+
+ .action_btn:active {
+    scale: 0.95;
+ }
+
+/*paragrafo*/
+section#hero{
+    height: calc(50vh - 40px);
+    padding: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+#hero h1{
+    font-size: 3rem;
+    
+}
+
+ .patrocinios{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+ }
+
+ @media screen and (max-width: 768px) {
+    p, .navbar {
+        height: 40%;
+        padding: 0;
+    }
+
+    .contas{
+        display: none;
+    }
+
+    .main, .card{
+        width: 100%;
+        height: 48%;
+    }
+
+    .patrocinios{
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 1500px) {
+    h2{
+        padding: 5;
+    }
+
+    .main, .card{
+        height: 60%;
+    }
+ }
